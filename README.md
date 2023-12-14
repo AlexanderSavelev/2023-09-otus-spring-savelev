@@ -29,7 +29,7 @@
 - ***Результат:***  
 Production-ready приложение на Spring Boot.  
 &nbsp;  
-- [ ] **Задание № 4:**  
+- [x] **[Задание № 4](https://github.com/AlexanderSavelev/2023-09-otus-spring-savelev/tree/homework_04/homework_04):**  
 - ***Описание:***  
 Перевести приложение для проведения опросов на Spring Shell.  
 - ***Цель:***  
