@@ -37,7 +37,7 @@ Production-ready приложение на Spring Boot.
 - ***Результат:***  
 Приложение на Spring Shell.  
 &nbsp;
-- [ ] **Задание № 5:**    
+- [x] **[Задание № 5](https://github.com/AlexanderSavelev/2023-09-otus-spring-savelev/tree/homework_05/homework_05):**    
 - ***Описание:***  
 Создать приложение хранящее информацию о книгах в библиотеке.   
 - ***Цель:***  
