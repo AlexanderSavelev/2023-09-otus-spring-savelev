@@ -1,0 +1,37 @@
+CREATE SEQUENCE author_seq
+  START WITH 1
+  INCREMENT BY 1
+  MINVALUE 1;
+
+CREATE SEQUENCE genre_seq
+  START WITH 1
+  INCREMENT BY 1
+  MINVALUE 1;
+
+CREATE SEQUENCE book_seq
+  START WITH 1
+  INCREMENT BY 1
+  MINVALUE 1;
+
+CREATE TABLE IF NOT EXISTS author (
+    id BIGINT DEFAULT NEXT VALUE FOR author_seq,
+    full_name VARCHAR(255) NOT NULL,
+    CONSTRAINT author_pk PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS genre (
+    id BIGINT DEFAULT NEXT VALUE FOR genre_seq,
+    name VARCHAR(255) NOT NULL,
+    CONSTRAINT genre_pk PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS book (
+    id BIGINT DEFAULT NEXT VALUE FOR book_seq,
+    title VARCHAR(255) NOT NULL,
+    author_id BIGINT NOT NULL,
+    genre_id BIGINT NOT NULL,
+    CONSTRAINT book_pk PRIMARY KEY (id),
+    CONSTRAINT book_author_fk FOREIGN KEY (author_id) REFERENCES author(id),
+    CONSTRAINT book_genre_fk FOREIGN KEY (genre_id) REFERENCES genre(id)
+);
+
