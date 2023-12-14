@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Student Test Application
+  output:
+    ansi:
+      enabled: always
+  shell:
+    history:
+      enabled: false
+banner:
+  location: 'classpath:banner.txt'
+test:
+  locale: en_EN
+  separator: ','
+  name: 'test_${test.locale}.csv'
+  pass: 50
+logging:
+  pattern:
+    console:
